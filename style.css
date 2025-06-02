@@ -1,5 +1,5 @@
-/* Reset and base styles */
-* {
+
+  {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,33 +10,30 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  background: linear-gradient(135deg, gray, lightgray);
+  font-family: 'Times New Roman';
+  color: black;
   padding: 20px;
   text-align: center;
 }
 
-/* Card container to hold all game elements */
 .game-container {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px black;
   padding: 40px 50px;
   max-width: 600px;
   width: 100%;
 }
 
-/* Title styling */
 h1 {
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 5px black;
   font-size: 3rem;
 }
 
-/* Buttons container */
 .buttons,
 .game-buttons {
   display: flex;
@@ -46,7 +43,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Common button styles */
 button {
   padding: 18px 30px;
   font-size: 18px;
@@ -56,24 +52,22 @@ button {
   cursor: pointer;
   color: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px black;
   user-select: none;
 }
 
-/* Start/Stop/Reset buttons */
 .buttons button {
-  background: #28a745; /* green */
+  background: blueviolet; 
   flex: 1 1 120px;
   max-width: 140px;
 }
 
 .buttons button:hover {
-  background: #218838;
+  background: cyan;
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px black;
 }
 
-/* Game choice buttons: circular, bigger */
 .game-buttons button {
   width: 140px;
   height: 140px;
@@ -85,46 +79,44 @@ button {
   flex-direction: column;
   gap: 6px;
   font-weight: 700;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px black;
   flex: 1 1 140px;
   max-width: 140px;
 }
 
-/* Rock - red */
+
 .game-buttons button:nth-child(1) {
-  background-color: #e74c3c;
-  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.7);
+  background-color: maroon;
+  box-shadow: 0 8px 20px red;
 }
 
-/* Paper - blue */
+
 .game-buttons button:nth-child(2) {
-  background-color: #3498db;
-  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.7);
+  background-color: gold;
+  box-shadow: 0 8px 20px yellow;
 }
 
-/* Scissors - orange */
+
 .game-buttons button:nth-child(3) {
-  background-color: #f39c12;
-  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.7);
+  background-color: green;
+  box-shadow: 0 8px 20px lightgreen;
 }
 
 .game-buttons button:hover {
   filter: brightness(110%);
   transform: scale(1.1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px black;
 }
 
-/* Result and Score text */
 .output {
   font-size: 24px;
   margin-top: 15px;
   min-height: 56px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 0 1px 3px black;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .game-container {
     max-width: 90%;
@@ -153,7 +145,6 @@ button {
   }
 }
 
-/* Extra small devices (phones) */
 @media (max-width: 480px) {
   .game-container {
     padding: 20px;
