@@ -15,23 +15,23 @@ function resetGame() {
  score = 0;
  isGameStarted = false;
  document.getElementById('score').textContent = "Score: 0";
- document.getElementById('result').textContent = "Game has reset. Click 'Play' to play again.";
+ document.getElementById('result').textContent = "Game has reset. Click 'Play the Game' to play again.";
 }
 
 
 function play(userChoice) {
  if (!isGameStarted) {
- document.getElementById('result').textContent = "Please press play first!";
+ document.getElementById('result').textContent = "Please press 'Play the Game' first!";
  return;
  }
- const choices = ['rock', 'paper', 'scissors'];
+ const choices = ['Rock', 'Paper', 'Scissors'];
  const computerChoice = choices[Math.floor(Math.random() * 3)];
  let result = '';
  if (userChoice === computerChoice) {
  result = "It is a draw! Play again.";
  } else if (
  (userChoice === 'Rock' && computerChoice === 'Scissors') ||
- (userChoice === 'paper' && computerChoice === 'Rock') ||
+ (userChoice === 'Paper' && computerChoice === 'Rock') ||
  (userChoice === 'Scissors' && computerChoice === 'Paper')
  ) {
  result = `You have won! ${userChoice} beats ${computerChoice}`;
