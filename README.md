@@ -12,4 +12,4 @@ This is a simple **Rock, Paper, Scissors** web game created using **HTML**, **CS
  
 ## Student Demonstrated Lab Activity
 
-This lab activity was demonstrated by Daniel Rusev based on the instructions provided. 
+This Rock, Paper, Scissors lab activity was demonstrated by Daniel Rusev based on the instructions provided. 
