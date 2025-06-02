@@ -30,9 +30,9 @@ function play(userChoice) {
  if (userChoice === computerChoice) {
  result = "It is a draw! Play again.";
  } else if (
- (userChoice === 'rock' && computerChoice === 'scissors') ||
- (userChoice === 'paper' && computerChoice === 'rock') ||
- (userChoice === 'scissors' && computerChoice === 'paper')
+ (userChoice === 'Rock' && computerChoice === 'Scissors') ||
+ (userChoice === 'paper' && computerChoice === 'Rock') ||
+ (userChoice === 'Scissors' && computerChoice === 'Paper')
  ) {
  result = `You have won! ${userChoice} beats ${computerChoice}`;
  score++;
