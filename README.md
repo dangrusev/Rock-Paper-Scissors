@@ -9,7 +9,7 @@ This is a simple **Rock, Paper, Scissors** web game created using **HTML**, **CS
 - UI interaction
 
 ---
-
+ 
 ## Student Demonstrated Lab Activity
 
-This lab activity was demonstarted by Daniel Rusev based on the instructions provided. 
+This lab activity was demonstrated by Daniel Rusev based on the instructions provided. 
