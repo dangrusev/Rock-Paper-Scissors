@@ -3,12 +3,12 @@ let isGameStarted = false;
 
 function startGame() {
  isGameStarted = true;
- document.getElementById('result').textContent = "The Game Has Started! Choose either Rock, Paper, or Scissors to play.";
+ document.getElementById('result').textContent = "The Game has started! Choose either Rock, Paper, or Scissors to play.";
 }
 
 function stopGame() {
  isGameStarted = false;
- document.getElementById('result').textContent = "The Game Has Stopped!";
+ document.getElementById('result').textContent = "The Game has stopped!";
 }
 
 function resetGame() {
